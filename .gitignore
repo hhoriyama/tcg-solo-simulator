@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------
+# カードデータ・カード画像
+# カード名/効果テキスト/画像は各権利者に帰属するため
+# このリポジトリには同梱しない。利用者が fetch_cards.js で各自取得する。
+# ---------------------------------------------------------------
+images/
+cards_*.csv
+cards_*.tsv
+
+# 公式配布物およびその加工物
+playsheet.pdf
+playsheet.png
+playsheet_wide.png
+img_apcard_jp.png
+img_card_jp.png
+
+# make_bg.py で生成する画像（実行すれば再生成できる）
+bg_theater.png
+
+# 開発中のスクリーンショット・作業用出力
+Claude outputs/
+
+# 一般
+node_modules/
+.DS_Store
+*.log
+
+# 旧・作品別の取得スクリプト（汎用版 get_cards.* に置き換え済み）
+get_*.bat
+get_*.sh
+!get_cards.bat
+!get_cards.sh
+!get_titles.bat
+!get_titles.sh
+
+# 取得結果のタイトル一覧（取得先の情報を含むため同梱しない）
+titles.json
